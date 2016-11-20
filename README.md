@@ -32,7 +32,7 @@ Test instructions:
 
 2.Move hand within certain distance threshold to move mouse, palm gesture move mouse and fist gesture clicks the mouse.
 
-3. Click ctrl+c to close program
+3.Click ctrl+c to close program
 
 
 #Method 2:
@@ -44,6 +44,7 @@ Installation instruction:
 Code is tested on Ubuntu Laptop
 
 Setup libraries:
+
 1.libfreenect for Kinect
 
 https://naman5.wordpress.com/2014/06/24/experimenting-with-kinect-using-opencv-python-and-open-kinect-libfreenect/
