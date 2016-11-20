@@ -1,10 +1,10 @@
-# Gestures
+# Gestures Recognition
 
-We have developed 2 different methods for Hand Gesture recognition:
+I have developed 2 different methods for Hand Gesture recognition:
 
 #Method 1:
 
-Installation instruction:
+##Installation instruction:
 
 1.libfreenect for Kinect
 
@@ -26,7 +26,7 @@ sudo apt-get install python-opencv
 
 sudo apt-get install python-Xlib
 
-Test instructions:
+##Test instructions:
 
 1.python handTracking.py
 
@@ -39,11 +39,9 @@ Test instructions:
 
 This method usses HaarCascade Classifiers
 
-Installation instruction: 
+##Installation instruction: 
 
 Code is tested on Ubuntu Laptop
-
-Setup libraries:
 
 1.libfreenect for Kinect
 
@@ -75,7 +73,7 @@ sudo nano /etc/udev/rules.d/51-kinect.rules
 
 --> add following lines:
 
-## ATTR{product}=="Xbox NUI Motor"
+<nowiki /># ATTR{product}=="Xbox NUI Motor"
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02b0", MODE="0666"
 # ATTR{product}=="Xbox NUI Audio"
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02ad", MODE="0666"
