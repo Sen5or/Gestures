@@ -50,6 +50,7 @@ Setup libraries:
 https://naman5.wordpress.com/2014/06/24/experimenting-with-kinect-using-opencv-python-and-open-kinect-libfreenect/
 
 sudo apt-get update
+
 sudo apt-get upgrade
 
 sudo apt-get install git-core cmake freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev
@@ -74,7 +75,7 @@ sudo nano /etc/udev/rules.d/51-kinect.rules
 
 --> add following lines:
 
-# ATTR{product}=="Xbox NUI Motor"
+## ATTR{product}=="Xbox NUI Motor"
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02b0", MODE="0666"
 # ATTR{product}=="Xbox NUI Audio"
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02ad", MODE="0666"
@@ -92,8 +93,11 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02bf", MODE="0666"
 freenect-glview
 
 --> In order to use kinect with opencv run below commands:
+
 sudo apt-get install cython
+
 sudo apt-get install python-dev
+
 sudo apt-get install python-numpy
 
 --> Navigate to /libfreenect/wrappers/python and run following command:
@@ -104,9 +108,11 @@ sudo python setup.py install
 
 
 2.Install opencv
+
 sudo apt-get install python-opencv
 
 3.Library for mouse control:
+
 sudo pip install PyUserInput
 
 --> Now you are all set for Gesture control
