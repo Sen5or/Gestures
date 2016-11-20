@@ -18,7 +18,9 @@ sudo make install
 sudo ldconfig /usr/local/lib64/
 
 sudo nano /etc/udev/rules.d/51-kinect.rules
-#add following lines:
+
+--> add following lines:
+
 # ATTR{product}=="Xbox NUI Motor"
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02b0", MODE="0666"
 # ATTR{product}=="Xbox NUI Audio"
@@ -32,20 +34,20 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02be", MODE="0666"
 # ATTR{product}=="Xbox NUI Motor"
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02bf", MODE="0666"
 
-#Save file and test below line:
+--> Save file and test below line:
 
 freenect-glview
 
-# In order to use kinect with opencv run below commands:
+--> In order to use kinect with opencv run below commands:
 sudo apt-get install cython
 sudo apt-get install python-dev
 sudo apt-get install python-numpy
 
-# Navigate to /libfreenect/wrappers/python and run following command:
+--> Navigate to /libfreenect/wrappers/python and run following command:
 
 sudo python setup.py install
 
-# Now you can try python kinectHandHaar.py after connecting Kinect:
+-->Now you can try python kinectHandHaar.py after connecting Kinect:
 
 
 2. Install opencv
@@ -54,4 +56,4 @@ sudo apt-get install python-opencv
 3. Library for mouse control:
 sudo pip install PyUserInput
 
-# Now you are all set for Gesture control
+--> Now you are all set for Gesture control
