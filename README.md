@@ -1,1 +1,57 @@
 # Gestures
+
+Following are instructions for setting up required libraries for Gesture control
+Code is tested on Ubuntu Laptop
+
+Setup libraries:
+1. libfreenect for Kinect
+https://naman5.wordpress.com/2014/06/24/experimenting-with-kinect-using-opencv-python-and-open-kinect-libfreenect/
+
+sudo apt-get install git-core cmake freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev
+git clone git://github.com/OpenKinect/libfreenect.git
+cd libfreenect
+mkdir build
+cd build
+cmake -L ..
+make
+sudo make install
+sudo ldconfig /usr/local/lib64/
+
+sudo nano /etc/udev/rules.d/51-kinect.rules
+#add following lines:
+# ATTR{product}=="Xbox NUI Motor"
+SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02b0", MODE="0666"
+# ATTR{product}=="Xbox NUI Audio"
+SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02ad", MODE="0666"
+# ATTR{product}=="Xbox NUI Camera"
+SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02ae", MODE="0666"
+# ATTR{product}=="Xbox NUI Motor"
+SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02c2", MODE="0666"
+# ATTR{product}=="Xbox NUI Motor"
+SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02be", MODE="0666"
+# ATTR{product}=="Xbox NUI Motor"
+SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02bf", MODE="0666"
+
+#Save file and test below line:
+
+freenect-glview
+
+# In order to use kinect with opencv run below commands:
+sudo apt-get install cython
+sudo apt-get install python-dev
+sudo apt-get install python-numpy
+
+# Navigate to /libfreenect/wrappers/python and run following command:
+
+sudo python setup.py install
+
+# Now you can try python kinectHandHaar.py after connecting Kinect:
+
+
+2. Install opencv
+sudo apt-get install python-opencv
+
+3. Library for mouse control:
+sudo pip install PyUserInput
+
+# Now you are all set for Gesture control
