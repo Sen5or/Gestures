@@ -14,23 +14,23 @@ https://naman5.wordpress.com/2014/06/24/experimenting-with-kinect-using-opencv-p
 
 sudo apt-get install python-pygame
 
-3. Numpy:
+3.Numpy:
 
 sudo apt-get install python-numpy
 
-4. Opencv:
+4.Opencv:
 
 sudo apt-get install python-opencv
 
-5. Xlib for mouse control:
+5.Xlib for mouse control:
 
 sudo apt-get install python-Xlib
 
 Test instructions:
 
-1. python handTracking.py
+1.python handTracking.py
 
-2. Move hand within certain distance threshold to move mouse, palm gesture move mouse and fist gesture clicks the mouse.
+2.Move hand within certain distance threshold to move mouse, palm gesture move mouse and fist gesture clicks the mouse.
 
 3. Click ctrl+c to close program
 
@@ -44,7 +44,7 @@ Installation instruction:
 Code is tested on Ubuntu Laptop
 
 Setup libraries:
-1. libfreenect for Kinect
+1.libfreenect for Kinect
 
 https://naman5.wordpress.com/2014/06/24/experimenting-with-kinect-using-opencv-python-and-open-kinect-libfreenect/
 
@@ -102,10 +102,10 @@ sudo python setup.py install
 -->Now you can try python kinectHandHaar.py after connecting Kinect:
 
 
-2. Install opencv
+2.Install opencv
 sudo apt-get install python-opencv
 
-3. Library for mouse control:
+3.Library for mouse control:
 sudo pip install PyUserInput
 
 --> Now you are all set for Gesture control
