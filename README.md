@@ -74,16 +74,27 @@ sudo nano /etc/udev/rules.d/51-kinect.rules
 --> add following lines:
 
 <nowiki /># ATTR{product}=="Xbox NUI Motor"
+
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02b0", MODE="0666"
-# ATTR{product}=="Xbox NUI Audio"
+
+<nowiki /># ATTR{product}=="Xbox NUI Audio"
+
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02ad", MODE="0666"
-# ATTR{product}=="Xbox NUI Camera"
+
+<nowiki /># ATTR{product}=="Xbox NUI Camera"
+
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02ae", MODE="0666"
-# ATTR{product}=="Xbox NUI Motor"
+
+<nowiki /># ATTR{product}=="Xbox NUI Motor"
+
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02c2", MODE="0666"
-# ATTR{product}=="Xbox NUI Motor"
+
+<nowiki /># ATTR{product}=="Xbox NUI Motor"
+
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02be", MODE="0666"
-# ATTR{product}=="Xbox NUI Motor"
+
+<nowiki /># ATTR{product}=="Xbox NUI Motor"
+
 SUBSYSTEM=="usb", ATTR{idVendor}=="045e", ATTR{idProduct}=="02bf", MODE="0666"
 
 --> Save file and test below line:
@@ -114,3 +125,7 @@ sudo apt-get install python-opencv
 sudo pip install PyUserInput
 
 --> Now you are all set for Gesture control
+
+#Author
+
+##Dhanesh Girish Pradhan
