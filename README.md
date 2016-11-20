@@ -7,14 +7,25 @@ Setup libraries:
 1. libfreenect for Kinect
 https://naman5.wordpress.com/2014/06/24/experimenting-with-kinect-using-opencv-python-and-open-kinect-libfreenect/
 
+sudo apt-get update
+sudo apt-get upgrade
+
 sudo apt-get install git-core cmake freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev
+
 git clone git://github.com/OpenKinect/libfreenect.git
+
 cd libfreenect
+
 mkdir build
+
 cd build
+
 cmake -L ..
+
 make
+
 sudo make install
+
 sudo ldconfig /usr/local/lib64/
 
 sudo nano /etc/udev/rules.d/51-kinect.rules
