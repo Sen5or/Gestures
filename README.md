@@ -5,34 +5,47 @@ We have developed 2 different methods for Hand Gesture recognition:
 #Method 1:
 
 Installation instruction:
+
 1.libfreenect for Kinect
+
 https://naman5.wordpress.com/2014/06/24/experimenting-with-kinect-using-opencv-python-and-open-kinect-libfreenect/
 
 2.Pygame:
+
 sudo apt-get install python-pygame
 
 3. Numpy:
+
 sudo apt-get install python-numpy
 
 4. Opencv:
+
 sudo apt-get install python-opencv
 
 5. Xlib for mouse control:
+
 sudo apt-get install python-Xlib
 
 Test instructions:
+
 1. python handTracking.py
+
 2. Move hand within certain distance threshold to move mouse, palm gesture move mouse and fist gesture clicks the mouse.
+
 3. Click ctrl+c to close program
 
+
 #Method 2:
+
 This method usses HaarCascade Classifiers
 
 Installation instruction: 
+
 Code is tested on Ubuntu Laptop
 
 Setup libraries:
 1. libfreenect for Kinect
+
 https://naman5.wordpress.com/2014/06/24/experimenting-with-kinect-using-opencv-python-and-open-kinect-libfreenect/
 
 sudo apt-get update
