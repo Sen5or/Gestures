@@ -1,3 +1,9 @@
+#Face Recognition and Gesture Recognition
+Run python mainCode.py
+
+Dependencies:
+Subprocess, cv, cv2, time, sys, freenect, subprocess, numpy, os, Xlib
+
 # Gestures Recognition
 
 I have developed 2 different methods for Hand Gesture recognition:
